@@ -23,7 +23,7 @@ h1 {
   position: relative;
   color: #2e7d32;
   width:60%;
-  top: 30px;
+  top: 100px;
   left: 20px;
   font-size: clamp(1.4rem, 5vw, 2.5rem);
 
@@ -104,6 +104,31 @@ section {
 
 
 
-table, th, td {
-  border: 1px solid black;
+ #ramadan table {
+  margin: 0 auto;
+  color: white;
+  border-collapse: collapse;
+  width: 60%;
+  table-layout: fixed;
+
+
+ }
+
+td {
+  color: black;
 }
+
+ #ramadan table th {
+    background-color: #2e7d32;
+    font-weight: 750;
+    padding: 5px;
+ }
+
+ #ramadan table .dark {
+  background-color: #e2e4df;
+ }
+
+ table .light {
+  background-color: #ffffff;
+ }
+
