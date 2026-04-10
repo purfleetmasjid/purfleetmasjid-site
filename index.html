@@ -412,6 +412,23 @@
             font-size: 0.8rem;
             opacity: 0.8;
         }
+        /* 🔥 TOP BAR */
+.prayer-top {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+        /* 🔥 BOTTOM STATUS */
+.prayer-status {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 14px;
+}
 
         /* Section Styles */
         .section {
@@ -1078,7 +1095,7 @@
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="#ramadan">Ramadan</a>
-                <a href="https://square.link/u/Wd4nEaqc" target="_blank">Donate</a>
+                <a href="#donate">Donate</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -1093,14 +1110,14 @@
                 Purfleet Muslim<br><span>Community Centre</span>
             </h1>
             <p class="hero-description" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                A place of worship, learning, and community
+                A place of worship, learning, and community since 2010
             </p>
             <div class="hero-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                 <a href="#about" class="btn btn-primary">
                     <i class="fas fa-mosque"></i>
                     Discover More
                 </a>
-                <a href="https://square.link/u/Wd4nEaqc" target="_blank" class="btn btn-outline">
+                <a href="#donate" class="btn btn-outline">
                     <i class="fas fa-hand-holding-heart"></i>
                     Support Us
                 </a>
@@ -1109,42 +1126,42 @@
     </section>
 
     <!-- Floating Prayer Times -->
-    <!-- <div class="prayer-floating">
-        <div class="container">
-            <div class="prayer-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
-                <div class="prayer-item">
-                    <i class="fas fa-sun"></i>
-                    <div class="prayer-name">Fajr</div>
-                    <div class="prayer-time">5:30 AM</div>
-                    <div class="prayer-iqamah">Iqamah: 5:45 AM</div>
-                </div>
-                <div class="prayer-item">
-                    <i class="fas fa-sun"></i>
-                    <div class="prayer-name">Dhuhr</div>
-                    <div class="prayer-time">12:15 PM</div>
-                    <div class="prayer-iqamah">Iqamah: 12:30 PM</div>
-                </div>
-                <div class="prayer-item">
-                    <i class="fas fa-sun"></i>
-                    <div class="prayer-name">Asr</div>
-                    <div class="prayer-time">3:45 PM</div>
-                    <div class="prayer-iqamah">Iqamah: 4:00 PM</div>
-                </div>
-                <div class="prayer-item">
-                    <i class="fas fa-moon"></i>
-                    <div class="prayer-name">Maghrib</div>
-                    <div class="prayer-time">Sunset</div>
-                    <div class="prayer-iqamah">Iqamah: 5 min after</div>
-                </div>
-                <div class="prayer-item">
-                    <i class="fas fa-moon"></i>
-                    <div class="prayer-name">Isha</div>
-                    <div class="prayer-time">8:30 PM</div>
-                    <div class="prayer-iqamah">Iqamah: 8:45 PM</div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+    <div class="prayer-floating">
+  <div class="container">
+    <div class="prayer-card">
+      <div class="prayer-top">
+        <div>📅 <span id="prayer-date">-- Shawwal --</span></div>
+        <div>☀️ Sunrise <span id="prayer-sunrise">--:--</span></div>
+      </div>
+      <div class="prayer-item" data-name="Fajr">
+        <i class="fas fa-sun"></i>
+        <div class="prayer-name">Fajr</div>
+        <div class="prayer-time">--:--</div>
+      </div>
+      <div class="prayer-item" data-name="Dhuhr">
+        <i class="fas fa-sun"></i>
+        <div class="prayer-name">Dhuhr</div>
+        <div class="prayer-time">--:--</div>
+      </div>
+      <div class="prayer-item" data-name="Asr">
+        <i class="fas fa-sun"></i>
+        <div class="prayer-name">Asr</div>
+        <div class="prayer-time">--:--</div>
+      </div>
+      <div class="prayer-item" data-name="Maghrib">
+        <i class="fas fa-moon"></i>
+        <div class="prayer-name">Maghrib</div>
+        <div class="prayer-time">--:--</div>
+      </div>
+      <div class="prayer-item" data-name="Isha">
+        <i class="fas fa-moon"></i>
+        <div class="prayer-name">Isha</div>
+        <div class="prayer-time">--:--</div>
+      </div>
+      <div class="prayer-status">Loading...</div>
+    </div>
+  </div>
+</div>
 
     <!-- About Section -->
     <section id="about" class="section premium-bg">
@@ -1152,10 +1169,7 @@
             <div class="section-header" data-aos="fade-up">
                 <div class="section-subtitle">Our Story</div>
                 <h2 class="section-title">About Us</h2>
-                <p class="section-description">A charity established by members of the Purfleet community to create a dedicated masjid for our growing community.
-                </br>
-                Registered Charity Number: <strong>1210723</strong>
-                </p>
+                <p class="section-description">A charity established by members of the Purfleet community to create a dedicated masjid for our growing community.</p>
             </div>
             <div class="about-grid">
                 <div class="about-card" data-aos="fade-right" data-aos-duration="1000">
@@ -1168,7 +1182,6 @@
                         </div>
                         <h3>Our Community</h3>
                         <p>Purfleet Muslim Community and Masjid is a charity established by members of the Purfleet community. Our goal is to create a dedicated masjid to serve the growing and vibrant Muslim community in the Purfleet area.</p>
-                        
                     </div>
                 </div>
                 <div class="about-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
@@ -1185,7 +1198,7 @@
                 </div>
                 <div class="about-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
                     <div class="card-image">
-                        <img src="" alt="Future">
+                        <img src="https://www.arabnews.pk/sites/default/files/styles/n_670_395/public/2019/04/14/1535721-1674587234.jpg?itok=HK7H-HGt"alt="Future">
                     </div>
                     <div class="card-content">
                         <div class="card-icon">
@@ -1238,7 +1251,7 @@
                 <h2 class="section-title">Ramadan 2026</h2>
                 <p class="section-description">Taraweeh prayer will be held at Purfleet Primary School every night</p>
             </div>
-            <!-- <div class="table-premium" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="table-premium" data-aos="zoom-in" data-aos-duration="1000">
                 <table>
                     <thead>
                         <tr>
@@ -1247,85 +1260,56 @@
                             <th>Iftar</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr><td>19th Feb</td><td>5:12</td><td>5:22</td></tr>
-                        <tr><td>20th Feb</td><td>5:10</td><td>5:23</td></tr>
-                        <tr><td>21st Feb</td><td>5:08</td><td>5:25</td></tr>
-                        <tr><td>22nd Feb</td><td>5:07</td><td>5:27</td></tr>
-                        <tr><td>23rd Feb</td><td>5:05</td><td>5:29</td></tr>
-                        <tr><td>24th Feb</td><td>5:03</td><td>5:31</td></tr>
-                        <tr><td>25th Feb</td><td>5:00</td><td>5:32</td></tr>
-                        <tr><td>26th Feb</td><td>4:58</td><td>5:34</td></tr>
-                        <tr><td>27th Feb</td><td>4:56</td><td>5:36</td></tr>
-                        <tr><td>28th Feb</td><td>4:54</td><td>5:38</td></tr>
-                        <tr><td>01st Mar</td><td>4:52</td><td>5:39</td></tr>
-                        <tr><td>02nd Mar</td><td>4:50</td><td>5:41</td></tr>
-                        <tr><td>03rd Mar</td><td>4:48</td><td>5:43</td></tr>
-                        <tr><td>04th Mar</td><td>4:45</td><td>5:45</td></tr>
-                        <tr><td>05th Mar</td><td>4:43</td><td>5:46</td></tr>
-                        <tr><td>06th Mar</td><td>4:41</td><td>5:48</td></tr>
-                        <tr><td>07th Mar</td><td>4:39</td><td>5:50</td></tr>
-                        <tr><td>08th Mar</td><td>4:36</td><td>5:52</td></tr>
-                        <tr><td>09th Mar</td><td>4:34</td><td>5:53</td></tr>
-                        <tr><td>10th Mar</td><td>4:32</td><td>5:55</td></tr>
-                        <tr><td>11th Mar</td><td>4:32</td><td>5:55</td></tr>
-                        <tr><td>12th Mar</td><td>4:29</td><td>5:57</td></tr>
-                        <tr><td>13th Mar</td><td>4:24</td><td>6:00</td></tr>
-                        <tr><td>14th Mar</td><td>4:22</td><td>6:02</td></tr>
-                        <tr><td>15th Mar</td><td>4:19</td><td>6:04</td></tr>
-                        <tr><td>16th Mar</td><td>4:17</td><td>6:05</td></tr>
-                        <tr><td>17th Mar</td><td>4:14</td><td>6:07</td></tr>
-                        <tr><td>18th Mar</td><td>4:12</td><td>6:09</td></tr>
-                        <tr><td>19th Mar</td><td>4:09</td><td>6:10</td></tr>
-                        <tr><td>20th Mar</td><td>4:07</td><td>6:12</td></tr>
-                    </tbody>
+                    <tbody id="ramadan-calendar-body">
+  <!-- JS will populate this automatically -->
+</tbody>
                 </table>
-            </div> -->
+            </div>
         </div>
     </section>
 
     <!-- Donation Section -->
-    <!-- <section id="donate" class="section donation-premium">
-        <div class="container">
-            <div class="donation-content">
-                <div class="section-header" data-aos="fade-up">
-                    <div class="section-subtitle">Support Your Masjid</div>
-                    <h2 class="section-title" style="color: white;">Make a Donation</h2>
-                    <p class="section-description" style="color: rgba(255,255,255,0.9);">Your generosity helps us build a permanent masjid and serve the community</p>
-                </div>
-                <div class="donation-card" data-aos="flip-up" data-aos-duration="1000">
-                    <h3 style="color: white; margin-bottom: 20px;">Select Donation Amount</h3>
-                    <div class="donation-amounts">
-                        <div class="amount-option" onclick="selectAmount(this, 10)">
-                            <div class="amount">£10</div>
+            <section id="donate" class="section donation-premium">
+                <div class="container">
+                    <div class="donation-content">
+                        <div class="section-header" data-aos="fade-up">
+                            <div class="section-subtitle">Support Your Masjid</div>
+                            <h2 class="section-title" style="color: white;">Make a Donation</h2>
+                            <p class="section-description" style="color: rgba(255,255,255,0.9);">Your generosity helps us build a permanent masjid and serve the community</p>
                         </div>
-                        <div class="amount-option" onclick="selectAmount(this, 25)">
-                            <div class="amount">£25</div>
-                        </div>
-                        <div class="amount-option" onclick="selectAmount(this, 50)">
-                            <div class="amount">£50</div>
-                        </div>
-                        <div class="amount-option" onclick="selectAmount(this, 100)">
-                            <div class="amount">£100</div>
-                        </div>
-                        <div class="amount-option" onclick="selectAmount(this, 250)">
-                            <div class="amount">£250</div>
-                        </div>
-                        <div class="amount-option" onclick="selectAmount(this, 500)">
-                            <div class="amount">£500</div>
+                        <div class="donation-card" data-aos="flip-up" data-aos-duration="1000">
+                            <h3 style="color: white; margin-bottom: 20px;">Select Donation Amount</h3>
+                            <div class="donation-amounts">
+                                <div class="amount-option" onclick="selectAmount(this, 10)">
+                                    <div class="amount">£10</div>
+                                </div>
+                                <div class="amount-option" onclick="selectAmount(this, 25)">
+                                    <div class="amount">£25</div>
+                                </div>
+                                <div class="amount-option" onclick="selectAmount(this, 50)">
+                                    <div class="amount">£50</div>
+                                </div>
+                                <div class="amount-option" onclick="selectAmount(this, 100)">
+                                    <div class="amount">£100</div>
+                                </div>
+                                <div class="amount-option" onclick="selectAmount(this, 250)">
+                                    <div class="amount">£250</div>
+                                </div>
+                                <div class="amount-option" onclick="selectAmount(this, 500)">
+                                    <div class="amount">£500</div>
+                                </div>
+                            </div>
+                            <a href="https://square.link/u/Wd4nEaqc" target="_blank" class="donate-now-btn" style="text-decoration: none;">
+    <i class="fas fa-heart"></i>
+    Donate Now
+</a>
+                            <p style="margin-top: 20px; opacity: 0.8;">
+                                <i class="fas fa-shield-alt"></i> 100% of donations go to the masjid
+                            </p>
                         </div>
                     </div>
-                    <button class="donate-now-btn" onclick="processDonation()">
-                        <i class="fas fa-heart"></i>
-                        Donate Now
-                    </button>
-                    <p style="margin-top: 20px; opacity: 0.8;">
-                        <i class="fas fa-shield-alt"></i> 100% of donations go to the masjid
-                    </p>
                 </div>
-            </div>
-        </div>
-    </section> -->
+            </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section">
@@ -1343,7 +1327,7 @@
                         </div>
                         <div class="contact-text">
                             <h4>Visit Us</h4>
-                            <p>Currently looking for potential locations within Purfleet.</p>
+                            <p>Purfleet Primary School<br>Tank Hill Road<br>Purfleet, RM19 1TA</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -1352,8 +1336,8 @@
                         </div>
                         <div class="contact-text">
                             <h4>Call Us</h4>
-                            <p>+44 (0) 7481270099</p>
-                            <a href="https://chat.whatsapp.com/BhpLVtxrcEq8dqeweD3GvX" target="_blank">Join Our Community Whatsapp Group</a>
+                            <p>+44 (0) 1708 123 456</p>
+                            <p style="margin-top: 5px;">info@purfleetmasjid.co.uk</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -1361,15 +1345,22 @@
                             <i class="fas fa-clock"></i>
                         </div>
                         <div class="contact-text">
-                            <h4>Madressa Times</h4>
-                            <p>9:45-12:45</p>
+                            <h4>Prayer Times</h4>
+                            <p>Fajr: 5:01 AM | Dhuhr: 13:05 PM<br>Asr: 16:36 PM | Maghrib: 19:31<br>Isha: 21:20 PM</p>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="map-premium" data-aos="fade-left" data-aos-duration="1000">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.418563987654!2d0.245678!3d51.456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDI3JzI0LjQiTiAwwrAxNCc0NC4yIkU!5e0!3m2!1sen!2suk!4v1234567890" 
-                            width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen="" loading="lazy"></iframe>
-                </div> -->
+                <div class="map-premium" data-aos="fade-left" data-aos-duration="1000">
+                    <iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.514725858914!2d0.23158527644874294!3d51.48542121230891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8b05f5f066301%3A0xed841049c5f269ca!2sPurfleet%20Primary%20Academy!5e0!3m2!1sen!2s!4v1774962896063!5m2!1sen!2s" 
+width="100%" 
+height="100%" 
+style="border:0; min-height: 400px;" 
+allowfullscreen="" 
+loading="lazy" 
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>ullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -1380,12 +1371,10 @@
             <div class="footer-grid">
                 <div class="footer-logo">
                     <h2>Purfleet Masjid</h2>
-                    <p style="opacity: 0.7; margin-bottom: 20px;">A charity established to serve the Muslim community in Purfleet.
-                    </br>Registered Charity Number: <strong>1210723</strong>
-                    </p>
+                    <p style="opacity: 0.7; margin-bottom: 20px;">A charity established to serve the Muslim community in Purfleet.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.tiktok.com/@purfleetmasjid?_r=1&_t=ZN-957aLPqjW6M"><i class="fab fa-tiktok"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
@@ -1402,7 +1391,7 @@
                 <div class="footer-links">
                     <h4>Support</h4>
                     <ul>
-                        <!-- <li><a href="#donate">Donate</a></li> -->
+                        <li><a href="#donate">Donate</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li><a href="#">Volunteer</a></li>
                         <li><a href="#">FAQs</a></li>
@@ -1508,7 +1497,7 @@
             alert(`✨ Jazakallah Khair for your generous donation of £${selectedAmount}! ✨\n\nYou will now be redirected to our secure payment page.`);
             
             // Simulate redirect
-            // window.location.href = `https://www.paypal.com/donate?amount=${selectedAmount}`;
+            // window.location.href = `https://square.link/u/Wd4nEaqc}`;
         }
 
         // Smooth scroll
@@ -1532,5 +1521,154 @@
             hero.style.transform = `translateY(${scrolled * 0.5}px)`;
         });
     </script>
+    <script>
+window.onload = function() {
+
+    // ==============================
+    // 🌙 Ramadan Calendar JS
+    // ==============================
+    function fetchRamadanCalendar() {
+        let today = new Date();
+        let month = today.getMonth() + 1;
+        let year = today.getFullYear();
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                getCalendar(position.coords.latitude, position.coords.longitude, month, year);
+            }, function() {
+                getCalendar(51.5074, -0.1278, month, year);
+            });
+        } else {
+            getCalendar(51.5074, -0.1278, month, year);
+        }
+    }
+
+    function getCalendar(lat, lon, month, year) {
+        fetch(`https://api.aladhan.com/v1/calendar?latitude=${lat}&longitude=${lon}&method=2&month=${month}&year=${year}`)
+            .then(res => res.json())
+            .then(data => {
+                updateRamadanTable(data.data);
+                updateTodayPrayerInfo(data.data);
+            })
+            .catch(err => console.error("API Error:", err));
+    }
+
+    function updateRamadanTable(days) {
+        const tbody = document.getElementById("ramadan-calendar-body");
+        if (!tbody) return;
+        tbody.innerHTML = "";
+
+        days.forEach(dayData => {
+            const gregDate = dayData.date.gregorian.date;
+            const sehri = dayData.timings.Fajr;
+            const iftar = dayData.timings.Maghrib;
+
+            const options = { day: 'numeric', month: 'short' };
+            const dateObj = new Date(gregDate.split('-').reverse().join('-'));
+            const formattedDate = dateObj.toLocaleDateString('en-GB', options);
+
+            tbody.innerHTML += `
+                <tr>
+                    <td>${formattedDate}</td>
+                    <td>${sehri}</td>
+                    <td>${iftar}</td>
+                </tr>
+            `;
+        });
+    }
+
+    // ==============================
+    // 🌅 Prayer Times JS (UK)
+    // ==============================
+    const prayerNames = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"];
+    let prayerTimesUK = {};
+
+    function getUKTime() {
+        return new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/London" }));
+    }
+
+    function updateTodayPrayerInfo(calendarData) {
+        const todayIndex = getUKTime().getDate() - 1;
+        const todayData = calendarData[todayIndex].timings;
+        const hijriDate = calendarData[todayIndex].date.hijri.date;
+        const sunriseTime = todayData.Sunrise.split(" ")[0];
+
+        // Update HTML
+        const dateEl = document.getElementById("prayer-date");
+        const sunriseEl = document.getElementById("prayer-sunrise");
+        if (dateEl) dateEl.innerText = hijriDate;
+        if (sunriseEl) sunriseEl.innerText = sunriseTime;
+
+        // Update prayer times
+        prayerNames.forEach(name => {
+            const timeStr = todayData[name].split(" ")[0];
+            const [h, m] = timeStr.split(":");
+            prayerTimesUK[name] = { hour: parseInt(h), minute: parseInt(m), display: timeStr };
+        });
+
+        updatePrayerHTML();
+        updatePrayerSystem();
+    }
+
+    function updatePrayerHTML() {
+        document.querySelectorAll(".prayer-item").forEach(el => {
+            const name = el.getAttribute("data-name");
+            if (prayerTimesUK[name]) {
+                el.setAttribute("data-time", `${prayerTimesUK[name].hour}:${prayerTimesUK[name].minute}`);
+                el.querySelector(".prayer-time").innerText = prayerTimesUK[name].display;
+            }
+        });
+    }
+
+    function updatePrayerSystem() {
+        const now = getUKTime();
+        const prayerElements = document.querySelectorAll(".prayer-item");
+        if (!prayerElements) return;
+
+        let prayers = [];
+        prayerElements.forEach(el => {
+            const name = el.getAttribute("data-name");
+            const time = el.getAttribute("data-time");
+            if (!time) return;
+            let [h, m] = time.split(":");
+            let t = new Date(now);
+            t.setHours(parseInt(h), parseInt(m), 0);
+            prayers.push({ name, time: t, element: el });
+        });
+
+        let currentIndex = -1;
+        for (let i = 0; i < prayers.length; i++) {
+            if (now >= prayers[i].time) currentIndex = i;
+        }
+
+        let nextIndex = currentIndex + 1;
+        if (nextIndex >= prayers.length) nextIndex = 0;
+
+        let nextPrayer = prayers[nextIndex];
+        let nextTime = new Date(nextPrayer.time);
+        if (nextIndex === 0 && now > nextTime) nextTime.setDate(now.getDate() + 1);
+
+        const diff = nextTime - now;
+        let hours = Math.floor(diff / (1000 * 60 * 60));
+        let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        if (seconds < 10) seconds = "0" + seconds;
+        if (minutes < 10) minutes = "0" + minutes;
+
+        const statusEl = document.querySelector(".prayer-status");
+        if (statusEl) {
+            statusEl.innerText = `${nextPrayer.name} starts in ${hours}h ${minutes}m ${seconds}s`;
+        }
+
+        // active highlight
+        prayerElements.forEach(el => el.classList.remove("active"));
+        if (currentIndex >= 0) prayers[currentIndex].element.classList.add("active");
+    }
+
+    setInterval(updatePrayerSystem, 1000);
+    fetchRamadanCalendar(); // this also triggers today’s prayer info
+};
+</script>
 </body>
 </html>
