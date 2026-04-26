@@ -1244,7 +1244,7 @@
     </section>
 
     <!-- Ramadan Section with Table -->
-    <section id="ramadan" class="section ramadan-section">
+<!-- <section id="ramadan" class="section ramadan-section">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <div class="section-subtitle">Blessed Month</div>
@@ -1260,13 +1260,38 @@
                             <th>Iftar</th>
                         </tr>
                     </thead>
-                    <tbody id="ramadan-calendar-body">
-  <!-- JS will populate this automatically -->
+                    <tbody id="ramadan-calendar-body">-->
+<!-- JS will populate this automatically -->
 </tbody>
                 </table>
             </div>
         </div>
     </section>
+
+    <!-- Hajj Guide Video Section -->
+<section id="hajj-video" class="section">
+    <div class="container">
+
+        <div class="section-header" data-aos="fade-up">
+            <div class="section-subtitle">Spiritual Guide</div>
+            <h2 class="section-title">Hajj Guide</h2>
+            <p class="section-description">Watch complete guide for performing Hajj</p>
+        </div>
+
+        <div class="video-container" data-aos="zoom-in">
+            <iframe 
+                width="100%" 
+                height="450" 
+                src="https://www.youtube.com/embed/DVB5KJckdkU" 
+                title="Hajj Guide Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+</section>
 
     <!-- Donation Section -->
             <section id="donate" class="section donation-premium">
@@ -1280,24 +1305,26 @@
                         <div class="donation-card" data-aos="flip-up" data-aos-duration="1000">
                             <h3 style="color: white; margin-bottom: 20px;">Select Donation Amount</h3>
                             <div class="donation-amounts">
+                                <div class="amount-option" onclick="selectAmount(this, 05)">
+                                    <div class="amount">£05</div>
+                                </div>
                                 <div class="amount-option" onclick="selectAmount(this, 10)">
                                     <div class="amount">£10</div>
                                 </div>
-                                <div class="amount-option" onclick="selectAmount(this, 25)">
-                                    <div class="amount">£25</div>
+                                <div class="amount-option" onclick="selectAmount(this, 20)">
+                                    <div class="amount">£20</div>
+                                </div>
+                                <div class="amount-option" onclick="selectAmount(this, 30)">
+                                    <div class="amount">£30</div>
                                 </div>
                                 <div class="amount-option" onclick="selectAmount(this, 50)">
                                     <div class="amount">£50</div>
                                 </div>
-                                <div class="amount-option" onclick="selectAmount(this, 100)">
-                                    <div class="amount">£100</div>
-                                </div>
-                                <div class="amount-option" onclick="selectAmount(this, 250)">
-                                    <div class="amount">£250</div>
-                                </div>
-                                <div class="amount-option" onclick="selectAmount(this, 500)">
-                                    <div class="amount">£500</div>
-                                </div>
+                                <a href="https://square.link/u/Wd4nEaqc" target="_blank" style="text-decoration: none;">
+    <div class="amount-option">
+        <div class="amount">Other</div>
+    </div>
+</a>
                             </div>
                             <a href="https://square.link/u/Wd4nEaqc" target="_blank" class="donate-now-btn" style="text-decoration: none;">
     <i class="fas fa-heart"></i>
@@ -1310,6 +1337,45 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Bank Details Section -->
+<section id="bank-details" class="section">
+    <div class="container">
+
+        <div class="section-header" data-aos="fade-up">
+            <div class="section-subtitle">Donation Info</div>
+            <h2 class="section-title">Bank Details</h2>
+            <p class="section-description">You can also donate via bank transfer</p>
+        </div>
+
+        <div class="bank-card" data-aos="zoom-in" style="
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            background: #ffffff;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: left;
+        ">
+
+            <h3 style="margin-bottom: 20px;">
+                Purfleet Community Centre and Masjid
+            </h3>
+
+            <p><strong>Account Title:</strong> Purfleet Community Centre and Masjid</p>
+            <p><strong>Sort Code:</strong> 20-19-97</p>
+            <p><strong>Account Number:</strong> 03653374</p>
+
+            <hr style="margin: 20px 0;">
+
+            <p style="font-size: 14px; color: #666;">
+                Please use your name as reference when sending donation.
+            </p>
+
+        </div>
+
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="section">
@@ -1327,7 +1393,7 @@
                         </div>
                         <div class="contact-text">
                             <h4>Visit Us</h4>
-                            <p>Purfleet Primary School<br>Tank Hill Road<br>Purfleet, RM19 1TA</p>
+                            <p>13 Comet Close<br> Purfleet-on-Thames<br>RM19 1QG</p>    
                         </div>
                     </div>
                     <div class="contact-item">
@@ -1336,19 +1402,27 @@
                         </div>
                         <div class="contact-text">
                             <h4>Call Us</h4>
-                            <p>+44 (0) 1708 123 456</p>
-                            <p style="margin-top: 5px;">info@purfleetmasjid.co.uk</p>
+                            <p>+44 (0) 748 1270 099</p>
+                            <p style="margin-top: 5px;">	muhammad.zahid@hotmail.co.uk</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Prayer Times</h4>
-                            <p>Fajr: 5:01 AM | Dhuhr: 13:05 PM<br>Asr: 16:36 PM | Maghrib: 19:31<br>Isha: 21:20 PM</p>
-                        </div>
-                    </div>
+    <div class="contact-icon">
+        <i class="fas fa-clock"></i>
+    </div>
+    <div class="contact-text">
+        <h4>Prayer Times</h4>
+        <p>
+            Fajr: <span id="ct-fajr">--</span> | 
+            Dhuhr: <span id="ct-dhuhr">--</span><br>
+
+            Asr: <span id="ct-asr">--</span> | 
+            Maghrib: <span id="ct-maghrib">--</span><br>
+
+            Isha: <span id="ct-isha">--</span>
+        </p>
+    </div>
+</div>
                 </div>
                 <div class="map-premium" data-aos="fade-left" data-aos-duration="1000">
                     <iframe 
@@ -1402,12 +1476,12 @@ referrerpolicy="no-referrer-when-downgrade">
                     <ul>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Charity Info</a></li>
+                        <li><a href="https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5244179/trustees?_uk_gov_ccew_onereg_charitydetails_web_portlet_CharityDetailsPortlet_organisationNumber=5244179">Charity Info</a></li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Purfleet Muslim Community Centre and Masjid. All rights reserved.</p>
+                <p>&copy; © 2025 Purfleet Muslim Community Centre and Masjid | Registered Charity Number: 1210723 | All rights reserved.</p>
                 <p style="margin-top: 10px; font-family: 'Playfair Display'; font-size: 1rem;">"The best of houses is the mosque" - Prophet Muhammad (ﷺ)</p>
             </div>
         </div>
@@ -1608,6 +1682,7 @@ window.onload = function() {
 
         updatePrayerHTML();
         updatePrayerSystem();
+        updateContactPrayerTimes(todayData);
     }
 
     function updatePrayerHTML() {
@@ -1669,6 +1744,22 @@ window.onload = function() {
     setInterval(updatePrayerSystem, 1000);
     fetchRamadanCalendar(); // this also triggers today’s prayer info
 };
+function updateContactPrayerTimes(todayData) {
+    const map = {
+        fajr: "Fajr",
+        dhuhr: "Dhuhr",
+        asr: "Asr",
+        maghrib: "Maghrib",
+        isha: "Isha"
+    };
+
+    Object.keys(map).forEach(key => {
+        const el = document.getElementById("ct-" + key);
+        if (el && todayData[map[key]]) {
+            el.innerText = todayData[map[key]].split(" ")[0];
+        }
+    });
+}
 </script>
 </body>
 </html>
